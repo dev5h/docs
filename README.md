@@ -1,5 +1,3 @@
-# index.php
+# docs
 
-Function references for index.php page
-
-`get_post_uri`: this motherfuicker does nothing lol
+This repo contains my own personal hand written docs for something I can look for. Please ignore
