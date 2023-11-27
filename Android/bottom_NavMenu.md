@@ -50,4 +50,6 @@ So that users can navigate properly
           app:menu="@menu/bottom_nav" />
    ```
 
-6. Constrain that layout and you're done! Output will look like this ![](/home/shazin/Code/projects/docs/Android/assets/ss2.png)
+6. Constrain that layout and you're done! Output will look like this ![](assets/d9837f75a2913bce4a39fb166caa4cc5ef096330.png)
+
+
