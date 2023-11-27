@@ -21,7 +21,21 @@ So that users can navigate properly
 4. Than add some icons in the drawable folder and add menu items as follow
    
    ```xml
-   
+   <?xml version="1.0" encoding="utf-8"?>
+   <menu xmlns:android="http://schemas.android.com/apk/res/android">
+       <item
+           android:id="@+id/home"
+           android:title="Home"
+           android:icon="@drawable/ic_home"/>
+       <item
+           android:id="@+id/add"
+           android:title="Add"
+           android:icon="@drawable/ic_add"/>
+       <item
+           android:id="@+id/settings"
+           android:title="Settings"
+           android:icon="@drawable/ic_gear"/>
+   </menu>
    ```
 
 5. Than add a material bottom nav view in the mainactivity layout file 
