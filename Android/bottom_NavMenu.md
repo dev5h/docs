@@ -52,4 +52,21 @@ So that users can navigate properly
 
 6. Constrain that layout and you're done! Output will look like this <br>![](assets/d9837f75a2913bce4a39fb166caa4cc5ef096330.png)
 
+7. In case you want to switch views or do anything when clicked  on the nav menus you can use the following code snippet.
+
+```kotlin
+// Navbar Menus
+        val bottomNavView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        val bn_home = bottomNavView.menu.findItem(R.menu.bottom_nav_bar) // This is if you need to select a single menu item
+        bottomNavView.setOnItemSelectedListener{
+            when(it.itemId){
+                R.id.bn_home -> supportFragmentManager.beginTransaction().replace(R.id.mainFrame, Home()).commit()
+                R.id.bn_add -> supportFragmentManager.beginTransaction().replace(R.id.mainFrame, AddUser()).commit()
+            }
+            true
+        }
+```
+
+This is usually when you want to switch views or fragments in the base frame
+
 

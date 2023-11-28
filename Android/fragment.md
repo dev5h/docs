@@ -27,8 +27,11 @@ So fragments are useful to load dynamic views in the runtime, hide, show , toggl
 
 2. Now click on java file and create an empty fragment 
    ![](assets/SS1.png) <br> Right click on the package name `com.example.fragmentapp` Than `New -> Fragment -> Fragment (Blank)`
+
 3. Give it a name and activity name as well
+
 4. Add whatever style you want in your layout.
+
 5. And than add the following code 
    
    ```kotlin
@@ -50,7 +53,7 @@ So fragments are useful to load dynamic views in the runtime, hide, show , toggl
    
        }
    
-       override fun onCreateView(
+       override fun onCreateV/home/shazin/.config/marktext/images/23e6349b70009fd1981559227841c85357aee350.pngiew(
            inflater: LayoutInflater, container: ViewGroup?,
            savedInstanceState: Bundle?
        ): View? {
@@ -68,5 +71,33 @@ So fragments are useful to load dynamic views in the runtime, hide, show , toggl
    ```
 
 6. Now edit **MainActivity.kt** and to load the fragment in the frame use the following line of code]
+
 7. `supportFragmentManager.beginTransaction().replace(R.id.frame, Frag1()).commit()`
+
 8. Don't forget to change the parameter `R.id.frame` with the frame id and `Frag1()` with the classname of the fragment classname
+
+#### Find view by ID(Get View Reference)
+
+To find a view that is inside of a context use the following code snippet
+
+```kotlin
+class AddUser : Fragment() {
+    private lateinit var btnAddUsr: Button
+      override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? { 
+        // Create a view  inflater
+        val view = inflater.inflate(R.layout.fragment_add_user, container, false)
+        // Than find the view like this
+        btnAddUsr = view.findViewById(R.id.btn_add_usr)
+        btnAddUsr.setOnClickListener{
+            Toast.makeText(requireContext(), "It Works", Toast.LENGTH_SHORT).show()
+        }
+        // Inflate the layout for this fragment
+        return view
+    }
+}
+```
+
+**Get Toast Context:** `Toast.makeText(requireContext(), "It Works", Toast.LENGTH_SHORT).show()` like this
