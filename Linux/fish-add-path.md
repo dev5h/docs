@@ -1,4 +1,4 @@
-n the Fish shell, you can add directories to your PATH by modifying the `config.fish` file. Here's how you can do it:
+On the Fish shell, you can add directories to your PATH by modifying the `config.fish` file. Here's how you can do it:
 
 ### Step 1: Open the Fish Configuration File
 Open the Fish configuration file `config.fish` in a text editor. You can use any text editor you prefer. For example:
