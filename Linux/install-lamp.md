@@ -33,27 +33,29 @@ Execute these MySQL commands one by one
 
 1. **Switch to the `mysql` database**:
 
-    ```sql
-    USE mysql;
-    ```
+```sql
+USE mysql;
+```
 
 2. **Change the authentication method to `mysql_native_password` and set a password**:
 
-    ```sql
-    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_new_password';
-    ```
+```sql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_new_password';
+```
 
 3. **Flush the privileges** to ensure the changes take effect:
 
-    ```sql
-    FLUSH PRIVILEGES;
-    ```
+```sql
+FLUSH PRIVILEGES;
+```
 
 4. **Exit MySQL**:
 
-    ```sql
-    EXIT;
+```sql
+EXIT;
 ```
+
+
 
 ## Install PHP
 
