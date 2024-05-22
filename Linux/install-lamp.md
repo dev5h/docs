@@ -18,7 +18,7 @@ sudo systemctl enable apache2
 ```bash
 sudo apt install mysql-server
 ```
-### Configure MySQL
+## Configure MySQL
 Run `sudo mysql_secure_installation`
 
 And secure mysql installation. After tht login to your root shell
@@ -68,7 +68,7 @@ sudo apt install phpmyadmin
 ```
 
 
-### Wrap Up
+## Wrap Up
 Finally run ```sudo systemctl restart apache2```
 
 
